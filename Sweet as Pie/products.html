@@ -1,68 +1,148 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sweet as Pie | Products</title>
-<link href="css/style.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handcrafted Pies in Cape Town | Sweet as Pie</title>
+
+    <meta name="description" content="Explore delicious handcrafted apple, blueberry and cherry pies at Sweet as Pie. Discover our selection and order your favourite pie.">
+
+    <!-- Link to the website stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <header>
-<a href="index.html">
-<img alt="Sweet as Pie logo" src="images/sweet-as-pie-banner.jpg" width="150"/>
-</a>
-<!-- Main navigation -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a aria-current="page" href="products.html">Products</a>
-    <a href="enquiry.html">Enquiry</a>
-    <a href="contact.html">Contact</a>
-    <a href="checkout.html">Checkout</a>
-</nav>
+    <a href="index.html">
+        <img
+            src="images/sweet-as-pie-banner.jpg"
+            alt="Sweet as Pie logo"
+            width="150"
+        >
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a aria-current="page" href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
 </header>
+
 <main>
-<!-- Products introduction -->
-<section>
-<h1>Our Products</h1>
-<p>
-                Explore our selection of handcrafted pies and tarts.
-            </p>
-</section>
-<!-- Product 1 -->
-<!-- Product 2 -->
-<!-- Product 3 -->
-<section aria-label="Product selection" class="product-grid"><article class="product-card">
-<img alt="Apple pie" sizes="(max-width: 600px) 92vw, (max-width: 900px) 85vw, 700px" src="https://www.sweetaspie.co.za/cdn/shop/files/Apple_Pie.jpg?v=1763087026&width=1946" srcset="https://www.sweetaspie.co.za/cdn/shop/files/Apple_Pie.jpg?v=1763087026&width=480 480w, https://www.sweetaspie.co.za/cdn/shop/files/Apple_Pie.jpg?v=1763087026&width=900 900w, https://www.sweetaspie.co.za/cdn/shop/files/Apple_Pie.jpg?v=1763087026&width=1400 1400w"/>
-<h2>Apple Pie</h2>
-<p>
-                A handcrafted pie filled with delicious apple filling
-                and baked until golden.
-            </p>
-<p><strong>Price: R220</strong></p>
-<button class="button" data-add-product="apple" type="button">Add to Checkout</button>
-</article><article class="product-card">
-<img alt="Blueberry pie" sizes="(max-width: 600px) 92vw, (max-width: 900px) 85vw, 700px" src="https://www.sweetaspie.co.za/cdn/shop/files/Sharing_Blueberry_Pie.jpg?v=1763087005&width=1946" srcset="https://www.sweetaspie.co.za/cdn/shop/files/Sharing_Blueberry_Pie.jpg?v=1763087005&width=480 480w, https://www.sweetaspie.co.za/cdn/shop/files/Sharing_Blueberry_Pie.jpg?v=1763087005&width=900 900w, https://www.sweetaspie.co.za/cdn/shop/files/Sharing_Blueberry_Pie.jpg?v=1763087005&width=1400 1400w"/>
-<h2>Blueberry Pie</h2>
-<p>
-                A delicious handcrafted pie filled with blueberries.
-            </p>
-<p><strong>Price: R220</strong></p>
-<button class="button" data-add-product="blueberry" type="button">Add to Checkout</button>
-</article><article class="product-card">
-<img alt="Cherry pie" sizes="(max-width: 600px) 92vw, (max-width: 900px) 85vw, 700px" src="https://www.sweetaspie.co.za/cdn/shop/files/Cherry_Pie.jpg?v=1763087017&width=1946" srcset="https://www.sweetaspie.co.za/cdn/shop/files/Cherry_Pie.jpg?v=1763087017&width=480 480w, https://www.sweetaspie.co.za/cdn/shop/files/Cherry_Pie.jpg?v=1763087017&width=900 900w, https://www.sweetaspie.co.za/cdn/shop/files/Cherry_Pie.jpg?v=1763087017&width=1400 1400w"/>
-<h2>Cherry Pie</h2>
-<p>
-                A flavourful cherry pie perfect for sharing with
-                friends and family.
-            </p>
-<p><strong>Price: R220</strong></p>
-<button class="button" data-add-product="cherry" type="button">Add to Checkout</button>
-</article></section></main>
+
+    <section>
+        <h1>Our Products</h1>
+        <p>Explore our selection of handcrafted pies and tarts.</p>
+    </section>
+
+    <!-- Product Search -->
+    <section class="product-search">
+        <label for="productSearch">Search for your favourite pie:</label>
+
+        <input
+            type="search"
+            id="productSearch"
+            placeholder="Search Apple, Blueberry or Cherry..."
+            aria-label="Search products"
+        >
+
+        <p id="searchMessage" aria-live="polite"></p>
+    </section>
+
+    <!-- Product Selection -->
+    <section aria-label="Product selection" class="product-grid">
+
+        <article class="product-card">
+            <img
+                class="gallery-image"
+                src="https://www.sweetaspie.co.za/cdn/shop/files/Apple_Pie.jpg?v=1763087026&width=1946"
+                alt="Freshly baked handcrafted apple pie from Sweet as Pie"
+                loading="lazy"
+            >
+
+            <h2>Apple Pie</h2>
+
+            <p>A handcrafted pie filled with delicious apple filling and baked until golden.</p>
+
+            <p><strong>Price: R220</strong></p>
+
+            <button class="button" data-add-product="apple" type="button">
+                Add to Checkout
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img
+                class="gallery-image"
+                src="https://www.sweetaspie.co.za/cdn/shop/files/Sharing_Blueberry_Pie.jpg?v=1763087005&width=1946"
+                alt="Delicious handcrafted blueberry pie from Sweet as Pie"
+                loading="lazy"
+            >
+
+            <h2>Blueberry Pie</h2>
+
+            <p>A delicious handcrafted pie filled with blueberries.</p>
+
+            <p><strong>Price: R220</strong></p>
+
+            <button class="button" data-add-product="blueberry" type="button">
+                Add to Checkout
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img
+                class="gallery-image"
+                src="https://www.sweetaspie.co.za/cdn/shop/files/Cherry_Pie.jpg?v=1763087017&width=1946"
+                alt="Freshly baked handcrafted cherry pie from Sweet as Pie"
+                loading="lazy"
+            >
+
+            <h2>Cherry Pie</h2>
+
+            <p>A flavourful cherry pie perfect for sharing with friends and family.</p>
+
+            <p><strong>Price: R220</strong></p>
+
+            <button class="button" data-add-product="cherry" type="button">
+                Add to Checkout
+            </button>
+        </article>
+
+    </section>
+
+</main>
+
 <footer>
-<p>© 2026 Sweet as Pie. All rights reserved.</p>
+    <p>© 2026 Sweet as Pie. All rights reserved.</p>
 </footer>
+
+<!-- Product Image Lightbox -->
+<div id="imageLightbox" class="lightbox" aria-hidden="true">
+
+    <button
+        type="button"
+        id="closeLightbox"
+        aria-label="Close image"
+    >
+        &times;
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Enlarged product image"
+    >
+
+</div>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>

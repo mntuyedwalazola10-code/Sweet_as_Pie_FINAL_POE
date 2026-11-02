@@ -2,48 +2,76 @@
 
 ## Student Information
 
-**Student Name:** Lazola Mntuyedwa  
-**Student Number:** ST10523148  
-**Module:** Web Development (WEDE5020w)  
-**Year:** 2026
+- **Student Name:** Lazola Mntuyedwa
+- **Student Number:** ST10523148
+- **Module:** Web Development (WEDE5020w)
+- **Year:** 2026
 
 ## 1. Project Overview
 
-The Sweet as Pie Website Redesign is a web development project for Sweet As Pie, a Cape Town artisanal bakery specialising in handcrafted pies and tarts. Part 1 establishes the website foundation through research, planning, content gathering, file organisation and semantic HTML.
+The Sweet as Pie Website Redesign is a web development project for Sweet As Pie, a Cape Town artisanal bakery specialising in handcrafted pies and tarts.
+
+The project aims to create a functional, attractive, responsive and user-friendly website that provides customers with information about the business, its products, contact details and ordering options.
+
+The project was completed in three stages: website planning and HTML development (Part 1), CSS styling and responsive design (Part 2), and JavaScript functionality, form validation and search engine optimisation (Part 3).
 
 ## 2. Website Goals and Objectives
 
-The project aims to create a functional, informative and easy-to-navigate website that supports Sweet As Pie's online presence. Objectives are to present the business and products clearly, provide enquiry and contact options, support an online-ordering concept, use semantic HTML5, maintain consistent navigation, and provide a structured foundation for CSS and JavaScript work in Parts 2 and 3.
+The website aims to:
+
+- Present Sweet As Pie and its products professionally.
+- Provide clear and consistent website navigation.
+- Allow customers to explore available pie flavours.
+- Provide product enquiry and contact forms.
+- Support a prototype shopping cart and checkout process.
+- Improve accessibility and usability across different devices.
+- Implement interactive functionality using JavaScript.
+- Improve search engine visibility through SEO techniques.
 
 ## 3. Target Audience
 
-The target audience includes existing and potential Sweet As Pie customers, Cape Town residents and visitors, families, dessert lovers, and customers seeking handcrafted desserts for celebrations, events or special occasions.
+The target audience includes existing and potential Sweet As Pie customers, Cape Town residents and visitors, families, dessert lovers, and customers seeking handcrafted desserts for celebrations, events and special occasions.
 
-## 4. Key Features and Functionality
+## 4. Website Pages and Features
 
-The project contains six pages: `index.html` (home), `about.html` (history, mission, vision and values), `products.html` (product information), `enquiry.html` (product/catering enquiry form), `contact.html` (contact details, two locations and general contact form), and `checkout.html` (additional order/checkout structure). All pages use a common navigation menu.
+The website contains six main HTML pages:
+
+| Page | File | Description |
+|---|---|---|
+| Home | index.html | Introduces the business and its offerings. |
+| About Us | about.html | Presents the business background, mission, vision and values. |
+| Products | products.html | Displays available pie flavours, descriptions and prices. |
+| Enquiry | enquiry.html | Allows customers to submit product, catering and large-order enquiries. |
+| Contact | contact.html | Provides contact information, location maps and a general contact form. |
+| Checkout | checkout.html | Provides a prototype shopping cart and checkout process. |
+
+All pages share a consistent navigation menu and external stylesheet.
 
 ## 5. Sitemap
 
 ```text
-                         SWEET AS PIE
-                              |
-                            HOME
-                         index.html
-                              |
-        +-------------+-------+-------+-------------+
-        |             |               |             |
-      ABOUT        PRODUCTS        ENQUIRY       CONTACT
-   about.html    products.html    enquiry.html  contact.html
-                     |
-                 CHECKOUT
-               checkout.html
+                    SWEET AS PIE
+                         |
+                        HOME
+                     index.html
+                         |
+       +-----------------+------------------+
+       |                 |                  |
+    ABOUT             PRODUCTS           ENQUIRY
+  about.html        products.html       enquiry.html
+                         |
+                      CHECKOUT
+                    checkout.html
+
+                      CONTACT
+                    contact.html
 ```
 
 ## 6. File and Folder Structure
 
 ```text
 Sweet as Pie/
+|
 |-- index.html
 |-- about.html
 |-- products.html
@@ -51,144 +79,305 @@ Sweet as Pie/
 |-- contact.html
 |-- checkout.html
 |-- README.md
+|-- robots.txt
+|-- sitemap.xml
+|
 |-- css/
-|   `-- style.css
+|   |-- style.css
+|
 |-- js/
-|   `-- script.js
-`-- images/
+|   |-- script.js
+|
+|-- images/
     |-- logo.png
     |-- hero-image.jpg
     |-- about-image.jpg
     |-- apple-pie.jpg
     |-- blueberry-pie.jpg
-    `-- cherry-pie.jpg
+    |-- cherry-pie.jpg
 ```
 
-File names are lowercase where appropriate, spaces are avoided in web asset names, and assets are separated by type.
+The actual image filenames in the project may differ from the examples above. The project uses organised folders to separate HTML, CSS, JavaScript and image assets.
 
 ## 7. Technologies Used
 
-**HTML5** provides the structure and content. Semantic elements such as `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` and `<footer>` are used. A basic external stylesheet is included so file paths are valid; detailed CSS and responsive design are reserved for Part 2. A JavaScript file is included as the Part 1 project foundation; interactive behaviour and client-side validation are reserved for Part 3.
+- **HTML5:** Provides the structure and content of the website using semantic elements.
+- **CSS3:** Provides styling, responsive layouts, animations and interactive visual states.
+- **JavaScript:** Implements product search, image lightbox functionality, shopping cart operations and form validation.
+- **Local Storage:** Temporarily stores shopping cart information in the user's browser.
+- **Google Maps Embed:** Displays the two business collection locations on the Contact page.
+- **Visual Studio Code:** Used for website development and editing.
+- **GitHub:** Used for version control and project submission.
+- **GitHub Pages / Netlify:** Intended for free website deployment, subject to final deployment configuration.
 
-## 8. Part 1 Details
+## 8. Part 1 – Website Planning and HTML Development
 
-Part 1 includes organisation selection and research, target-audience identification, website goals, content planning, a sitemap, an organised project structure, six linked HTML pages, semantic HTML, relevant content, forms, code comments, image assets and testing of local file paths/navigation. The Checkout page is an additional documented page beyond the five-page minimum.
+Part 1 established the website foundation through organisation research, target-audience identification, website objectives, content planning, sitemap development and wireframes.
 
-## 9. Timeline and Milestones
+Six linked HTML pages were created using semantic HTML5 elements, including header, navigation, main, section, article and footer elements.
 
-| Stage | Activity | Timeline |
-|---|---|---|
-| 1 | Organisation research and project planning | Week 1 |
-| 2 | Content gathering, sitemap and wireframes | Week 2 |
-| 3 | HTML structure and page development | Weeks 3–4 |
-| 4 | CSS styling and responsive design | Weeks 5–6 |
-| 5 | JavaScript functionality | Week 7 |
-| 6 | Testing, debugging, SEO and final improvements | Week 8 |
+The project also includes organised CSS, JavaScript and image folders, consistent navigation and appropriate content for each page.
 
-## 10. Testing and Debugging
+## 9. Part 2 – CSS Styling and Responsive Design
 
-Part 1 testing checks that all six pages open, navigation links point to existing pages, CSS and JavaScript paths resolve, image assets display, forms contain appropriate HTML elements, and the HTML remains readable and logically structured. Cross-browser and responsive testing will continue in later parts as styling and functionality are added.
+Part 2 developed the website's visual presentation through an external stylesheet linked to all six HTML pages.
 
-## 11. Changelog
+The stylesheet uses reusable CSS custom properties, consistent typography, spacing, colours, borders, shadows, Flexbox and CSS Grid.
+
+The desktop layout includes a sticky header, flexible navigation, hero sections, product cards, styled forms and consistent calls to action.
+
+Responsive design includes:
+
+- A tablet breakpoint at 900px.
+- A mobile breakpoint at 600px.
+- Responsive navigation and product layouts.
+- Flexible image sizing.
+- Responsive typography and spacing.
+- Hover, focus, focus-visible and active states for interactive elements.
+
+The website was designed to provide a consistent experience on desktop, tablet and mobile devices.
+
+## 10. Part 3 – Enhancing Functionality and SEO
+
+Part 3 enhanced the existing website through JavaScript functionality, improved forms, interactive elements and search engine optimisation.
+
+### 10.1 JavaScript Enhancements
+
+JavaScript was used to introduce interactive functionality across the website.
+
+The enhancements include:
+
+**Product Search and Filtering**
+
+The Products page includes a search field that allows customers to search for pies by product name or description. Products that do not match the search are hidden, and a message displays the number of matching products.
+
+**Product Image Lightbox**
+
+Customers can click a product image to view an enlarged version. The lightbox can be closed using the close button, clicking outside the image or pressing the Escape key.
+
+**Product Card Animations**
+
+CSS transitions and hover effects provide visual feedback when customers interact with product cards and images.
+
+**Shopping Cart Functionality**
+
+Customers can add Apple, Blueberry and Cherry pies to their cart. The selected products are stored using browser localStorage.
+
+The checkout page displays selected products, quantities, subtotal and total. Customers can increase or decrease quantities and select delivery or collection.
+
+**Dynamic DOM Manipulation**
+
+JavaScript updates the product search results, shopping cart contents, quantities, totals and form confirmation messages without requiring a complete page reload.
+
+### 10.2 Form Functionality and Validation
+
+The website contains two forms with different purposes.
+
+**Enquiry Form**
+
+The Enquiry page allows customers to submit:
+
+- Full name.
+- Email address.
+- Telephone number.
+- Type of enquiry.
+- Enquiry message.
+
+The form uses HTML5 validation and JavaScript email validation. Required fields, input formats and message character lengths are checked before a confirmation message is displayed.
+
+After submission, the prototype provides a confirmation explaining that the enquiry details have been captured for review.
+
+**Contact Form**
+
+The Contact page collects:
+
+- Full name.
+- Email address.
+- Telephone number.
+- Message type.
+- Full message.
+
+HTML5 and JavaScript validation prevent incomplete or incorrectly formatted information from proceeding.
+
+The contact form prepares an email addressed to orders@sweetaspie.co.za using a mailto link. The visitor must have an email application configured and manually send the prepared message.
+
+**Form Functionality Limitation**
+
+The forms currently demonstrate client-side validation and prototype interactions. They do not use a backend database or server-side email service. The enquiry form displays a prototype confirmation, while the contact form prepares an email for the customer to send.
+
+### 10.3 Interactive Maps
+
+The Contact page includes embedded Google Maps showing:
+
+- Makers Landing, V&A Waterfront, Cape Town.
+- The Old Biscuit Mill, Woodstock, Cape Town.
+
+The maps allow visitors to view the two listed collection locations.
+
+### 10.4 Search Engine Optimisation (SEO)
+
+SEO improvements were implemented to improve the website's discoverability and provide clearer information to search engines.
+
+The improvements include:
+
+- Unique page titles for all six HTML pages.
+- Relevant meta descriptions for each page.
+- Descriptive image alternative text.
+- Appropriate heading hierarchy.
+- Descriptive product information.
+- Internal links between website pages.
+- Responsive and mobile-friendly layouts.
+- Descriptive image filenames where applicable.
+- A robots.txt file.
+- A sitemap.xml file.
+
+**Robots.txt**
+
+The robots.txt file provides search engine crawlers with instructions about website access and identifies the sitemap location.
+
+**Sitemap.xml**
+
+The sitemap lists the main website pages to help search engines discover the website structure.
+
+The sitemap and robots.txt must be updated with the actual deployed website URL before publication. The official Sweet As Pie business domain must not be used as the student's website deployment address unless the student controls that domain.
+
+### 10.5 Accessibility and Usability
+
+Accessibility and usability improvements include:
+
+- Alternative text for product images and the business logo.
+- Labels associated with form fields.
+- Required-field validation.
+- Descriptive navigation links.
+- ARIA labels and live status messages where appropriate.
+- Keyboard support for closing the product lightbox.
+- Responsive layouts for different screen sizes.
+
+## 11. Testing and Debugging
+
+Testing was conducted throughout development to check that the website pages, interactive features and forms work as intended.
+
+The following functionality should be checked before final submission:
+
+| Test | Expected result |
+|---|---|
+| Navigation links | All six pages open correctly. |
+| Product images | All three product images display. |
+| Product search | Matching products display and non-matching products are hidden. |
+| Image lightbox | Clicking an image opens an enlarged image. |
+| Lightbox closing | Close button, outside click and Escape key close the lightbox. |
+| Add to Checkout | Selected product is added to the cart. |
+| Quantity controls | Cart quantities and totals update correctly. |
+| Enquiry validation | Required fields and invalid email addresses are rejected. |
+| Contact validation | Required fields and invalid email addresses are rejected. |
+| Contact email | A prepared email opens for the customer to send. |
+| Google Maps | Both location maps display. |
+| Responsive design | Pages adapt to desktop, tablet and mobile widths. |
+
+Testing evidence should be retained using screenshots of the website and its interactive features.
+
+## 12. Changelog
 
 ### Version 1.0 – Part 1
-- Created the six HTML pages and common navigation.
+
+- Created six HTML pages and common navigation.
 - Added semantic HTML structure, relevant content, forms and comments.
-- Added sitemap and Part 1 README documentation.
-- Added `css`, `js` and `images` folders with valid linked files.
-- Added original coursework image assets so the project contains no broken image paths.
-- Added a second contact/collection location to satisfy the PoE requirement for more than one location.
-- Corrected the README so it accurately reflects the files contained in the project.
+- Added sitemap and initial README documentation.
+- Created CSS, JavaScript and image folders.
+- Added image assets and checked local file paths.
+- Added a second contact and collection location.
+- Corrected the README to reflect the project structure.
 
-Future changes made for Parts 2 and 3 should be recorded here.
+### Version 2.0 – Part 2
 
-## 12. Content Research and Sourcing
+- Developed a comprehensive external stylesheet used across all six pages.
+- Added reusable CSS custom properties.
+- Improved typography, spacing and visual hierarchy.
+- Added desktop Flexbox and CSS Grid layouts.
+- Added consistent brand colours, borders, rounded cards and shadows.
+- Added hover, focus, focus-visible and active states.
+- Added tablet and mobile breakpoints.
+- Improved responsive navigation and product layouts.
+- Added responsive image rules.
+- Updated the colour palette and typography to match the approved proposal.
+- Implemented product-to-checkout functionality using localStorage.
+- Added checkout quantity controls and calculated totals.
+- Added prototype confirmation messages to forms.
 
-Sweet As Pie's official website was used to verify the business background, products, contact details and collection information. The official site states that the business was founded in 2020 by Zizi Matikiti, operates from Makers Landing in Cape Town, and sells handcrafted pies and tarts. Its FAQ also identifies The Old Biscuit Mill as a collection option.
+### Version 3.0 – Part 3
 
-The image files included in this Part 1 package are simple original coursework graphics created specifically for this project package; they are not copied from the Sweet As Pie website or another third-party image library. They may be replaced later with properly licensed and referenced production images.
+- Added JavaScript product search and filtering.
+- Added a product image lightbox with multiple closing options.
+- Added product card hover animations and CSS transitions.
+- Improved the shopping cart and checkout interactions.
+- Added additional HTML5 form validation.
+- Added JavaScript email validation to the Enquiry and Contact forms.
+- Added telephone number validation and message character limits.
+- Improved the enquiry form confirmation message.
+- Added a contact form with message categories and email preparation.
+- Added embedded Google Maps for Makers Landing and The Old Biscuit Mill.
+- Added unique SEO page titles and meta descriptions.
+- Improved image alternative text.
+- Added robots.txt and sitemap.xml.
+- Updated project documentation to include Part 3 functionality and testing requirements.
 
-## 13. References
+## 13. Content Research and Image Sourcing
 
-Sweet As Pie. 2026. *Sweet As Pie*. Available at: https://www.sweetaspie.co.za/ [Accessed 18 September 2026].
+Sweet As Pie's official website was consulted for business information, product details, contact information and collection information.
 
-Sweet As Pie. 2026. *Frequently Asked Questions*. Available at: https://www.sweetaspie.co.za/pages/faq [Accessed 18 September 2026].
+Product photography is sourced from the official Sweet As Pie website's product image CDN. The product images used in the website should be acknowledged in accordance with the institution's referencing requirements.
 
-Sweet As Pie. 2026. *Sharing Pies*. Available at: https://www.sweetaspie.co.za/products/sharing-pies [Accessed 18 September 2026].
+Any additional third-party images or content must be appropriately credited.
 
-Sweet As Pie. 2026. *Catering and Events*. Available at: https://www.sweetaspie.co.za/pages/catering-and-events [Accessed 18 September 2026].
+## 14. References
 
-## 14. Repository Information
+Mozilla Developer Network (MDN). n.d. *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed 2 November 2026).
 
-The project should be maintained in the private GitHub repository supplied through the lecturer. Commit genuine changes regularly using descriptive messages. The existing repository history is preserved; this corrected package adds a new Part 1 alignment commit rather than inventing earlier commits.
+Mozilla Developer Network (MDN). n.d. *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed 2 November 2026).
 
-## 15. Separate Part 1 Submission Items
+Mozilla Developer Network (MDN). n.d. *JavaScript*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed 2 November 2026).
 
-The website project folder does **not** replace the other Part 1 submission items required by the PoE. Keep the lecturer-approved Website Project Proposal (from the two proposals prepared for approval), the content research/sourcing submission, and the GitHub repository link with the submission as instructed. Low-fidelity wireframes belong in the proposal/planning documentation and should also be retained with the Part 1 evidence.
+Mozilla Developer Network (MDN). n.d. *Client-side form validation*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation (Accessed 2 November 2026).
 
-## 16. AI Use Reminder
+Google. n.d. *Google Maps*. Available at: https://www.google.com/maps (Accessed 2 November 2026).
 
-Where AI tools were used in preparing or revising this project, the final academic submission must include the institution-required AI acknowledgement/disclosure, in-text citation/full reference where applicable, and the required evidence/screenshots in accordance with the PoE instructions.
+Sweet As Pie. n.d. *Sweet As Pie*. Available at: https://www.sweetaspie.co.za/ (Accessed 2 November 2026).
 
-## 17. Part 2 – CSS Styling and Responsive Design
+Sweet As Pie. n.d. *Frequently Asked Questions*. Available at: https://www.sweetaspie.co.za/pages/faq (Accessed 2 November 2026).
 
-Part 2 develops the visual presentation of the Sweet as Pie website through one external stylesheet linked to all six HTML pages. The stylesheet uses a reset, reusable CSS custom properties, consistent typography, spacing, colour, borders, shadows, Flexbox and CSS Grid. Reusable selectors reduce duplication and support the cascading nature of CSS.
+Sweet As Pie. n.d. *Sharing Pies*. Available at: https://www.sweetaspie.co.za/products/sharing-pies (Accessed 2 November 2026).
 
-The desktop layout uses a sticky header, flexible navigation, a two-column hero, three-column product layouts, styled forms, cards and consistent calls to action. Interactive states are provided with `:hover`, `:focus-visible`, `:focus` and `:active` pseudo-classes to improve feedback and keyboard accessibility.
+## 15. Repository Information
 
-Responsive design uses a desktop-first approach with breakpoints at **900px (tablet)** and **600px (mobile)**. At tablet width, major two-column areas become single-column and product cards move to two columns. At mobile width, product cards become single-column, navigation becomes a two-column grid, buttons become full-width and typography/spacing scale down. Relative units (`rem`, `%`, `vw`) and `clamp()` are used throughout. Images use `max-width: 100%`, automatic height, `srcset` and `sizes`, with small and medium image variants included in the `images` folder.
+The project is maintained using GitHub for version control and source-code management.
 
-### Part 2 Testing Evidence
+The repository should contain all six HTML pages, the external CSS stylesheet, JavaScript functionality, images, robots.txt, sitemap.xml and this README file.
 
-Before submission, browser Developer Tools must be used to test the site and screenshots must be added here for evidence. Capture at least:
+Changes should be committed using descriptive commit messages that accurately reflect the work completed.
 
-1. **Desktop:** 1440 × 900 – Home page and Products page.
-2. **Tablet:** 768 × 1024 – Home page showing the adjusted hero/navigation and Products page showing two columns.
-3. **Mobile:** 390 × 844 – Home page showing stacked content/navigation and Products page showing one product per row.
+**GitHub Repository:** Insert the actual public repository URL here.
 
-Place the screenshots in `images/testing/` and replace this checklist with the screenshots or Markdown image links before final submission.
+**Live Website:** Insert the actual deployed website URL here once deployment is complete.
 
-### Part 2 Changelog – Version 2.0
+## 16. Submission Evidence and Final Checks
 
-- Replaced the Part 1 foundation CSS with a comprehensive external stylesheet used by all six pages.
-- Added a consistent reset and base style system using reusable CSS custom properties.
-- Added responsive typography with `clamp()`, relative units, consistent line-height and hierarchy.
-- Added desktop Flexbox/Grid layouts for the header, hero, products and location content.
-- Added consistent brand colour, borders, rounded cards and shadows.
-- Added comprehensive `:hover`, `:focus`, `:focus-visible` and `:active` states for links, navigation, form fields and buttons.
-- Added tablet breakpoint at 900px and mobile breakpoint at 600px.
-- Added responsive layout, typography and navigation adjustments at both breakpoints.
-- Added responsive image rules plus `srcset` and `sizes` attributes and small/medium image variants.
-- Added `aria-current="page"` to identify the current navigation item visually and semantically.
-- Retained and improved the Part 1 corrections: valid asset folders, working local paths, six linked pages, second contact location and accurate README documentation.
+Before submission, confirm that:
 
-### Part 1 Lecturer Feedback
+- All six HTML pages are included.
+- CSS and JavaScript files are included.
+- Images and other required assets are included.
+- The README contains the Part 1, Part 2 and Part 3 documentation.
+- The changelog records the actual changes made.
+- The website has been tested on desktop and mobile.
+- Screenshots of functionality and responsive layouts are retained.
+- The GitHub repository contains the latest changes.
+- The live website is deployed if required by the assessment.
+- The GitHub repository URL is included in the submission.
 
-**Important:** Add the lecturer's actual Part 1 feedback here once received, followed by the exact correction made for each feedback point. Do not invent feedback. The Part 2 rubric allocates marks specifically for comprehensive changes based on Part 1 feedback and a detailed changelog.
+Any lecturer feedback received should be documented accurately, together with the corrections made. Do not invent feedback or testing results.
 
-## 18. Part 2 References
+## 17. AI Use Declaration
 
-Mozilla Developer Network (MDN). 2026. *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 23 September 2026].
+AI tools were used as an assistance resource during aspects of planning, coding support, debugging and documentation. The final submission should include the AI acknowledgement, disclosure and supporting evidence required by the institution and the assessment brief.
 
-Mozilla Developer Network (MDN). 2026. *Responsive images*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 23 September 2026].
-
-Mozilla Developer Network (MDN). 2026. *Using media queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries [Accessed 23 September 2026].
-
-Sweet As Pie. 2026. *Sweet As Pie*. Available at: https://www.sweetaspie.co.za/ [Accessed 18 September 2026].
-
-### Part 2 consistency and functionality update — 24 September 2026
-- Updated the CSS colour palette to match the approved proposal exactly: Soft Pink `#F4C2C2`, Cream `#FFF8E7`, Chocolate Brown `#6B3E26`, White `#FFFFFF`, and Dark Charcoal `#333333`.
-- Updated typography to match the proposal: Playfair Display for headings and Poppins for body text, navigation and buttons, with web-safe fallbacks.
-- Added functional product-to-checkout behaviour using localStorage. Product buttons now add the selected pie and open the checkout page.
-- Added working checkout quantity controls, calculated subtotal/total, collection/delivery behaviour, required-field validation and a prototype confirmation message.
-- Added successful prototype responses to the Enquiry and Contact forms while retaining native HTML validation.
-- Retained tablet and mobile breakpoints, responsive navigation, responsive product grids and responsive image rules.
-
-### Image sourcing note
-Product and brand imagery should be sourced from Sweet as Pie's own website where permission/academic fair-use requirements allow. The official site was consulted for product information and visual references. Any externally sourced images used in the submitted website must be credited in this README and in the project references in accordance with the IIE Harvard Referencing Guide.
-
-### Product pricing and photography update (25 September 2026)
-- Product prices were checked against the official Sweet As Pie website. Sharing-size Apple, Blueberry and Cherry pies are presented as flavour options of the Sharing Pies product at **R220**.
-- Product cards now use current Sweet As Pie product photography hosted on the organisation's official Shopify CDN instead of placeholder illustrations.
-- Checkout product data was updated to use the same verified price and official product images so the Products and Checkout pages remain consistent.
-- Image sources: Sweet As Pie official Sharing Pies product page (accessed 25 September 2026).
+The student remains responsible for reviewing, understanding, testing and verifying all submitted work.

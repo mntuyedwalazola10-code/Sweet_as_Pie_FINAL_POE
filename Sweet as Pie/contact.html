@@ -1,89 +1,188 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sweet as Pie | Contact</title>
-<link href="css/style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Sweet as Pie | Orders and Customer Support</title>
+    <meta name="description" content="Contact Sweet as Pie for pie orders, product enquiries, collection information and customer assistance in Cape Town.">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <header>
-<a href="index.html">
-<img alt="Sweet as Pie logo" src="images/sweet-as-pie-banner.jpg" width="150"/>
-</a>
-<!-- Main navigation -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="enquiry.html">Enquiry</a>
-    <a aria-current="page" href="contact.html">Contact</a>
-    <a href="checkout.html">Checkout</a>
-</nav>
+    <a href="index.html">
+        <img src="images/sweet-as-pie-banner.jpg" alt="Sweet as Pie logo" width="150">
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
 </header>
+
 <main>
-<h1>Contact Sweet as Pie</h1>
-<!-- Contact information -->
-<section>
-<h2>Get in Touch</h2>
-<p>
-                Contact us for information about products,
-                orders, collection or catering.
+
+    <section>
+        <h1>Contact Sweet as Pie</h1>
+        <p>We would love to hear from you. Contact us for product information, orders, collection or catering enquiries.</p>
+    </section>
+
+    <section>
+        <h2>Get in Touch</h2>
+
+        <p><strong>Email:</strong>
+            <a href="mailto:orders@sweetaspie.co.za">orders@sweetaspie.co.za</a>
+        </p>
+
+        <p><strong>Telephone:</strong>
+            <a href="tel:+27744688682">+27 74 468 8682</a>
+        </p>
+    </section>
+
+    <div class="location-grid">
+
+        <section class="location-card">
+            <h2>Location 1 – Makers Landing</h2>
+            <p>V&A Waterfront, Cape Town</p>
+
+            <iframe
+                src="https://maps.google.com/maps?q=Makers%20Landing%20Cape%20Town&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="250"
+                style="border:0;"
+                loading="lazy"
+                title="Map showing Makers Landing"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="location-card">
+            <h2>Location 2 – The Old Biscuit Mill</h2>
+            <p>Woodstock, Cape Town</p>
+            <p>Weekend collection is available from The Old Biscuit Mill / Neighbourgoods Market. Please confirm collection details when ordering.</p>
+
+            <iframe
+                src="https://maps.google.com/maps?q=The%20Old%20Biscuit%20Mill%20Cape%20Town&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="250"
+                style="border:0;"
+                loading="lazy"
+                title="Map showing The Old Biscuit Mill"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+    </div>
+
+    <section>
+        <h2>Send Us a Message</h2>
+
+        <p>Complete the form below to prepare an email for our customer support team.</p>
+
+        <form id="contactForm">
+
+            <p>
+                <label for="contactName">Full Name:</label><br>
+                <input type="text" id="contactName" name="contactName"
+                       minlength="2" maxlength="60" required>
             </p>
-<p>
-<strong>Email:</strong>
-                orders@sweetaspie.co.za
+
+            <p>
+                <label for="contactEmail">Email Address:</label><br>
+                <input type="email" id="contactEmail" name="contactEmail"
+                       placeholder="example@gmail.com" required>
             </p>
-<p>
-<strong>Telephone:</strong>
-                +27 74 468 8682
+
+            <p>
+                <label for="contactPhone">Phone Number:</label><br>
+                <input type="tel" id="contactPhone" name="contactPhone"
+                       pattern="[0-9+() -]{7,20}"
+                       title="Enter a valid phone number." required>
             </p>
-</section><div class="location-grid"><section class="location-card">
-<h2>Location 1 – Makers Landing</h2>
-<p>
-                V&amp;A Waterfront, Cape Town
+
+            <p>
+                <label for="messageType">Message Type:</label><br>
+                <select id="messageType" name="messageType" required>
+                    <option value="">Select a message type</option>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Order Support">Order Support</option>
+                    <option value="Product Feedback">Product Feedback</option>
+                    <option value="Delivery and Collection">Delivery and Collection</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Other">Other</option>
+                </select>
             </p>
-<!-- Google Map can be embedded here later -->
-<p>Map will be displayed here.</p>
-</section><section class="location-card">
-<h2>Location 2 – The Old Biscuit Mill</h2>
-<p>Woodstock, Cape Town</p>
-<p>Weekend collection is available from The Old Biscuit Mill / Neighbourgoods Market. Please confirm collection details when ordering.</p>
-</section></div>
-<!-- Location 1 -->
-<!-- Location 2 -->
-<!-- Contact form -->
-<section>
-<h2>Send Us a Message</h2>
-<form data-demo-form="true" data-success="Thank you. Your message has been captured successfully for this prototype.">
-<p>
-<label for="contactName">
-                        Full Name:
-                    </label><br/>
-<input id="contactName" name="contactName" required="" type="text"/>
-</p>
-<p>
-<label for="contactEmail">
-                        Email:
-                    </label><br/>
-<input id="contactEmail" name="contactEmail" required="" type="email"/>
-</p>
-<p>
-<label for="contactMessage">
-                        Message:
-                    </label><br/>
-<textarea cols="40" id="contactMessage" name="contactMessage" required="" rows="6"></textarea>
-</p>
-<button type="submit">
-                    Send Message
-                </button>
-<p aria-live="polite" class="form-status"></p></form>
-</section>
+
+            <p>
+                <label for="contactMessage">Your Message:</label><br>
+                <textarea id="contactMessage" name="contactMessage"
+                          rows="6" cols="40" minlength="10"
+                          maxlength="1000" required></textarea>
+            </p>
+
+            <button type="submit">Send Message</button>
+
+            <p id="contactStatus" role="status" aria-live="polite"></p>
+
+        </form>
+    </section>
+
 </main>
+
 <footer>
-<p>© 2026 Sweet as Pie. All rights reserved.</p>
+    <p>© 2026 Sweet as Pie. All rights reserved.</p>
 </footer>
+
 <script src="js/script.js"></script>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = this;
+    const email = document.getElementById('contactEmail');
+    const status = document.getElementById('contactStatus');
+
+    const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+    email.setCustomValidity('');
+
+    if (!emailPattern.test(email.value.trim())) {
+        email.setCustomValidity('Please enter a valid email address, for example name@gmail.com.');
+        email.reportValidity();
+        return;
+    }
+
+    if (!form.reportValidity()) {
+        return;
+    }
+
+    const subject = encodeURIComponent(
+        'Sweet as Pie - ' + document.getElementById('messageType').value
+    );
+
+    const body = encodeURIComponent(
+        'Full Name: ' + document.getElementById('contactName').value +
+        '\nEmail: ' + email.value +
+        '\nPhone: ' + document.getElementById('contactPhone').value +
+        '\nMessage Type: ' + document.getElementById('messageType').value +
+        '\nMessage: ' + document.getElementById('contactMessage').value
+    );
+
+    status.textContent = 'Opening your email application. Please send the prepared message to complete your enquiry.';
+
+    window.location.href =
+        'mailto:orders@sweetaspie.co.za?subject=' + subject + '&body=' + body;
+});
+</script>
+
 </body>
 </html>

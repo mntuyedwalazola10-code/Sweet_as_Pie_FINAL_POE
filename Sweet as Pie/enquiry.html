@@ -1,85 +1,150 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sweet as Pie | Enquiry</title>
-<link href="css/style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pie Enquiries | Sweet as Pie Cape Town</title>
+
+    <meta name="description" content="Enquire about Sweet as Pie handcrafted pies, catering, large orders and special occasions. Contact us for product information and availability.">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <header>
-<a href="index.html">
-<img alt="Sweet as Pie logo" src="images/sweet-as-pie-banner.jpg" width="150"/>
-</a>
-<!-- Main navigation -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a aria-current="page" href="enquiry.html">Enquiry</a>
-    <a href="contact.html">Contact</a>
-    <a href="checkout.html">Checkout</a>
-</nav>
+    <a href="index.html">
+        <img
+            src="images/sweet-as-pie-banner.jpg"
+            alt="Sweet as Pie logo"
+            width="150"
+        >
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a aria-current="page" href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
 </header>
+
 <main>
-<section>
-<h1>Product Enquiry</h1>
-<p>
-                Have a question about our products, catering,
-                large orders or special occasions? Complete the
-                form below.
+
+    <section>
+        <h1>Product Enquiry</h1>
+
+        <p>
+            Have a question about our products, catering,
+            large orders or special occasions? Complete the
+            enquiry form below. We will review your request
+            and provide relevant information about pricing
+            and availability.
+        </p>
+
+        <!-- Customer Enquiry Form -->
+        <form
+            data-demo-form="true"
+            data-success="Thank you for your enquiry! Your details have been captured successfully. Our team will review your request and provide information about pricing, availability or your selected service."
+        >
+
+            <p>
+                <label for="name">Full Name:</label><br>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    minlength="2"
+                    maxlength="60"
+                    required
+                >
             </p>
-<!-- Customer enquiry form -->
-<form data-demo-form="true" data-success="Thank you. Your enquiry has been captured successfully for this prototype.">
-<p>
-<label for="name">Full Name:</label><br/>
-<input id="name" name="name" required="" type="text"/>
-</p>
-<p>
-<label for="email">Email Address:</label><br/>
-<input id="email" name="email" required="" type="email"/>
-</p>
-<p>
-<label for="phone">Phone Number:</label><br/>
-<input id="phone" name="phone" type="tel"/>
-</p>
-<p>
-<label for="enquiryType">
-                        Type of Enquiry:
-                    </label><br/>
-<select id="enquiryType" name="enquiryType">
-<option value="">Select an option</option>
-<option value="product">
-                            Product Enquiry
-                        </option>
-<option value="catering">
-                            Catering
-                        </option>
-<option value="large-order">
-                            Large Order
-                        </option>
-<option value="event">
-                            Event
-                        </option>
-<option value="other">
-                            Other
-                        </option>
-</select>
-</p>
-<p>
-<label for="message">Message:</label><br/>
-<textarea cols="40" id="message" name="message" required="" rows="6"></textarea>
-</p>
-<button type="submit">
-                    Submit Enquiry
-                </button>
-<p aria-live="polite" class="form-status"></p></form>
-</section>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    pattern="[0-9+() -]{7,20}"
+                    title="Enter a valid phone number containing 7 to 20 characters."
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="enquiryType">Type of Enquiry:</label><br>
+
+                <select
+                    id="enquiryType"
+                    name="enquiryType"
+                    required
+                >
+                    <option value="">Select an option</option>
+                    <option value="Product Enquiry">Product Enquiry</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Large Order">Large Order</option>
+                    <option value="Event">Event</option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Your Enquiry:</label><br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    cols="40"
+                    minlength="10"
+                    maxlength="1000"
+                    placeholder="Tell us what you would like to know about our products or services..."
+                    required
+                ></textarea>
+            </p>
+
+            <button type="submit">
+                Submit Enquiry
+            </button>
+
+            <p
+                class="form-status"
+                aria-live="polite"
+                role="status"
+            ></p>
+
+        </form>
+
+    </section>
+
 </main>
+
 <footer>
-<p>© 2026 Sweet as Pie. All rights reserved.</p>
+    <p>© 2026 Sweet as Pie. All rights reserved.</p>
 </footer>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
