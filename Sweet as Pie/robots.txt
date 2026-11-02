@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.sweetaspie.co.za/sitemap.xml
+Sitemap: https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/sitemap.xml

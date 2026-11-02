@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://www.sweetaspie.co.za/</loc>
-    </url>
-
-    <url>
-        <loc>https://www.sweetaspie.co.za/about.html</loc>
-    </url>
-
-    <url>
-        <loc>https://www.sweetaspie.co.za/products.html</loc>
-    </url>
-
-    <url>
-        <loc>https://www.sweetaspie.co.za/enquiry.html</loc>
-    </url>
-
-    <url>
-        <loc>https://www.sweetaspie.co.za/contact.html</loc>
-    </url>
-
-    <url>
-        <loc>https://www.sweetaspie.co.za/checkout.html</loc>
-    </url>
-
+  <url><loc>https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/</loc></url>
+  <url><loc>https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/about.html</loc></url>
+  <url><loc>https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/products.html</loc></url>
+  <url><loc>https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/enquiry.html</loc></url>
+  <url><loc>https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/contact.html</loc></url>
+  <url><loc>https://mntuyedwalola10-code.github.io/Sweet_as_Pie_FINAL_POE/checkout.html</loc></url>
 </urlset>
